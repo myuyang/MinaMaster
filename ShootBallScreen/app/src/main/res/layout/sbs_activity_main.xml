@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/sbs_activity_remote_bg_g"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="201dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/sbs_activity_main_tennis_bg"/>
+
+    <TextView
+        android:id="@+id/tv_activity_main_shoot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/ibn_activity_main_shoot"
+        android:layout_alignTop="@+id/ibn_activity_main_shoot"
+        android:gravity="center"
+        android:text="发球"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/ibn_activity_main_shoot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="106dp"
+        android:layout_marginEnd="44dp"
+        android:background="@mipmap/sbs_btn_main_tennis"/>
+
+    <TextView
+        android:id="@+id/tv_activity_main_auto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/ibn_activity_main_auto"
+        android:layout_alignTop="@+id/ibn_activity_main_auto"
+        android:gravity="center"
+        android:text="捡球"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/ibn_activity_main_auto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/tv_activity_main_shoot"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/sbs_btn_main_tennis"/>
+
+    <TextView
+        android:id="@+id/tv_activity_main_remote"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/ibn_activity_main_collect"
+        android:layout_alignTop="@+id/ibn_activity_main_collect"
+        android:gravity="center"
+        android:text="遥控"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/ibn_activity_main_collect"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="131dp"
+        android:layout_marginStart="47dp"
+        android:background="@mipmap/sbs_btn_main_tennis"/>
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:joy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/sbs_activity_remote_bg_g"
+    android:orientation="horizontal"
+    tools:context=".activities.RemoteControllerActivity">
+
+    <include
+        android:id="@+id/activity_remote_title"
+        layout="@layout/sbs_activity_title_layout"/>
+
+    <RelativeLayout
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:background="@mipmap/sbs_activity_remote_direction_bg">
+
+        <Button
+            android:id="@+id/btn_activity_remote_up"
+            android:layout_width="@dimen/joystick_direction_width"
+            android:layout_height="@dimen/joystick_direction_height"
+            android:layout_above="@+id/btn_activity_remote_right"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sbs_activity_remote_up_selector"/>
+
+        <Button
+            android:id="@+id/btn_activity_remote_down"
+            android:layout_width="@dimen/joystick_direction_width"
+            android:layout_height="@dimen/joystick_direction_height"
+            android:layout_below="@+id/btn_activity_remote_left"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sbs_activity_remote_down_selector"/>
+
+        <Button
+            android:id="@+id/btn_activity_remote_left"
+            android:layout_width="@dimen/joystick_direction_width"
+            android:layout_height="@dimen/joystick_direction_height"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/btn_activity_remote_up"
+            android:background="@drawable/sbs_activity_remote_left_selector"/>
+
+        <Button
+            android:id="@+id/btn_activity_remote_right"
+            android:layout_width="@dimen/joystick_direction_width"
+            android:layout_height="@dimen/joystick_direction_height"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_activity_remote_down"
+            android:background="@drawable/sbs_activity_remote_right_selector"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_activity_start"
+        android:background="@mipmap/sbs_activity_remote_start_normal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/btn_activity_remote_y"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btn_activity_remote_x"
+        android:layout_toEndOf="@+id/btn_activity_remote_x"
+        android:background="@drawable/sbs_btn_activity_remote_y_selector"
+        android:text="Y"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/btn_activity_remote_x"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/btn_activity_remote_a"
+        android:background="@drawable/sbs_btn_activity_remote_x_selector"
+        android:text="X"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/btn_activity_remote_a"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/btn_activity_remote_b"
+        android:layout_toStartOf="@+id/btn_activity_remote_b"
+        android:background="@drawable/sbs_btn_activity_remote_a_selector"
+        android:text="A"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/btn_activity_remote_b"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/sbs_btn_activity_remote_b_selector"
+        android:text="B"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"/>
+
+    <vitaliqp.shootballscreen.views.CustomJoystickView
+        android:id="@+id/cjv_activity_remote_left"
+        android:layout_width="@dimen/joystick_width_value_px"
+        android:layout_height="@dimen/joystick_height_value_px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/joystick_margin_bottom"
+        android:layout_toLeftOf="@id/v_acitivity_remote_center"
+        joy:areaBackground="@mipmap/sbs_activity_remote_js_bg"
+        joy:joystickBackground="@mipmap/sbs_activity_remote_js_roc"
+        joy:joystickRadius="@dimen/joystick_radius_value_px"/>
+
+    <View
+        android:id="@+id/v_acitivity_remote_center"
+        android:layout_width="@dimen/joystick_distance"
+        android:layout_height="@dimen/joystick_height_value_px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/joystick_margin_bottom"
+        android:alpha="0"/>
+
+    <vitaliqp.shootballscreen.views.CustomJoystickView
+        android:id="@+id/cjv_activity_remote_right"
+        android:layout_width="@dimen/joystick_width_value_px"
+        android:layout_height="@dimen/joystick_height_value_px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/joystick_margin_bottom"
+        android:layout_toRightOf="@id/v_acitivity_remote_center"
+        joy:areaBackground="@mipmap/sbs_activity_remote_js_bg"
+        joy:joystickBackground="@mipmap/sbs_activity_remote_js_roc"
+        joy:joystickRadius="@dimen/joystick_radius_value_px"/>
+
+</RelativeLayout>

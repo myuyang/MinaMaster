@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activities.ShootBallActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_auto_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/sbs_activity_remote_bg_g">
+
+        <Button
+            android:id="@+id/btn_activity_auto_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:background="@mipmap/sbs_btn_back_gray_a"/>
+
+        <TextView
+            android:id="@+id/tv_activity_auto_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/activity_auto_title"
+            android:textColor="#959595"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_activity_auto_start"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="80dp"
+            android:background="@mipmap/sbs_activity_remote_start_normal"/>
+    </RelativeLayout>
+
+
+    <!--layout_height=240dp-->
+    <RelativeLayout
+        android:id="@+id/rl_activity_auto_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_auto_title">
+
+        <FrameLayout
+            android:id="@+id/fl_auto_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/sbs_activity_remote_bg_g"/>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:visibility="invisible"
+        android:id="@+id/bnv_activity_auto_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/rl_activity_auto_content"
+        android:background="@mipmap/sbs_activity_remote_bg_g"
+        app:itemTextColor="#959595"
+        app:menu="@menu/menu_activity_auto_bottom">
+
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>

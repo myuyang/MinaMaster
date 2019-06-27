@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".activities.ShootBallActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_shoot_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/sbs_activity_remote_bg_g">
+
+        <Button
+            android:id="@+id/btn_activity_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:background="@mipmap/sbs_btn_back_gray_a"/>
+
+        <TextView
+            android:id="@+id/tv_activity_shoot_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/activity_shoot_title"
+            android:textColor="#959595"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_activity_shoot_start"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="80dp"
+            android:background="@mipmap/sbs_activity_remote_start_normal"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13">
+
+        <FrameLayout
+            android:id="@+id/config_fl_shoot_ball"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/sbs_activity_remote_bg_g"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/config_ll_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@mipmap/sbs_activity_remote_bg_g">
+
+        <TextView
+            android:id="@+id/tv_activity_shoot_fixed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorGray"
+            android:text="定点发球"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"/>
+
+        <View
+            android:id="@+id/aictivity_divider_0"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider"/>
+
+        <TextView
+            android:id="@+id/tv_activity_shoot_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorGray"
+            android:gravity="center"
+            android:text="左右发球"
+            android:textSize="18sp"/>
+
+        <View
+            android:id="@+id/activity_divider_1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider"/>
+
+        <TextView
+            android:id="@+id/tv_activity_shoot_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorGray"
+            android:gravity="center"
+            android:text="远近发球"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

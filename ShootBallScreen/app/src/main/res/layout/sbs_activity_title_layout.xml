@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/config_rl_top"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@mipmap/sbs_activity_remote_bg_g">
+
+    <Button
+        android:id="@+id/btn_activity_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:background="@mipmap/sbs_btn_back_gray_a"/>
+
+    <TextView
+        android:id="@+id/tv_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/activity_auto_title"
+        android:textColor="#959595"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+</RelativeLayout>

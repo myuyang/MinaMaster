@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="JoystickView">
+        <attr name="areaBackground" format="color|reference" />
+        <attr name="joystickBackground" format="color|reference" />
+        <attr name="joystickRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="DragView">
+        <attr name="areaDragBackground" format="color|reference" />
+        <attr name="textBackground" format="color|reference" />
+        <attr name="direction" format="integer" />
+    </declare-styleable>
+
+</resources>

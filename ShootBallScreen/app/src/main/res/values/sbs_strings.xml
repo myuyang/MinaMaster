@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MJBallCollector</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //dialog text
+    <string name="dialog_title_otg">提示信息：</string>
+    <string name="dialog_title_no_permission">未授权限</string>
+    <string name="dialog_message_otg_not_support">您的手机不支持USB HOST，请更换其他手机再试！</string>
+    <string name="dialog_message_otg_quit">确认退出？</string>
+    <string name="dialog_button_position">确认</string>
+    <string name="dialog_button_negative">取消</string>
+
+    //toast text
+    <string name="toast_device_open_failed">打开设备失败</string>
+    <string name="toast_device_init_failed">设备初始化失败</string>
+    <string name="toast_device_open_succeed">打开设备成功</string>
+    <string name="toast_device_config_succeed">设置成功</string>
+    <string name="activity_remote_title">遥控模式</string>
+    <string name="activity_auto_title">捡球模式</string>
+    <string name="activity_shoot_title">发球模式</string>
+
+    //activity_auto
+    <string name="menu_activity_auto_smart">智能捡球</string>
+    <string name="menu_activity_auto_area">区域捡球</string>
+</resources>
